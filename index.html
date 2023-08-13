@@ -18,6 +18,8 @@
     />
     <!-- Estilos -->
         <link rel="stylesheet" href="css/styles.css"/>
+    <!-- Scripts -->
+    <script src="js/scripts.js" defer></script>
 </head>
 <body>
     <!-- Cabeçalho de banner -->
@@ -32,9 +34,14 @@
                 <a href="#contact">Contato</a>
             </nav>
             <!-- Menu Mobile--> 
-            <i class="bi bi-list" id="menu"></i>
-            <nav id="mobile-navbar" class="menu-active"> 
-                <i class="bi bi-x-lg" id="close-menu"></i>
+              <button id="menu">
+                <i class="bi bi-list" ></i>
+              </button>
+              
+              <nav id="mobile-navbar" class="menu"> 
+                <button id="close-menu">
+                    <i class="bi bi-x-lg"></i>
+                </button>
                 <a href="#header">Início</a>
                 <a href="#expertise-areas">Serviços</a>
                 <a href="#about">Sobre</a>
@@ -42,18 +49,34 @@
                 <a href="#contact">Contato</a>
             </nav>
         </div>  
-        <div classe="banner active">
-            <span classe="square"></span>
+        <div class="banner active">
+            <span class="square"></span>
             <h2>Melhores experts em direito do país</h2>
             <p>
                 Os advogados mais bem qualificados estão aqui, agende uma reunião e 
                 conheça nosso time
             </p>
         </div>
+        <div class="banner">
+            <span class="square"></span>
+            <h2>Conheça o nosso time</h2>
+            <p>
+                Veja as especialidades dos nossos advogados, e entenda como eles podem 
+                lhe ajudar
+            </p>
+        </div>
+        <div class="banner">
+            <span class="square"></span>
+            <h2>Os nossos resultados</h2>
+            <p>
+              Confira as nossas métricas e conheça os resultados que obtivemos
+            </p>
+        </div>
         <div class="dots">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+            <div class="dot active" data-slid="1"></div>
+            <div class="dot active" data-slid="2"></div>
+            <div class="dot active" data-slid="3"></div>
+            
         </div>
     </header>
     <!-- Áreas de atuação -->
